@@ -2,8 +2,6 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1614637516336_0" label="Java Main Sources" name="Java Main Sources"/>
 <workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1614637516359_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1614653612981_3" label="learnjava" name="learnjava">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/learnjava" type="4"/>
-</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1614653612981_3" label="learnjava" name="learnjava"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1614637529460_2" label="Window Working Set" name="Aggregate for window 1614637529460"/>
 </workingSetManager>
