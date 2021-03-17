@@ -1,0 +1,17 @@
+package com.edu;
+
+public class PrincipalMetodos {
+
+	public static void main(String[] args) {
+		
+		probarMapCustom();
+
+	}
+	
+	public static void probarMapCustom() {
+		
+		MapCustom map = new MapCustom(;, null)
+		
+	}
+
+}

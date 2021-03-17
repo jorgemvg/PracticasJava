@@ -1,0 +1,49 @@
+package com.edu;
+
+enum Season{
+	SPRING(42), SUMMER(67), AUTUMN(32), WINTER(20);
+	
+	private int temperature;
+	
+	Season(int temp){
+		this.temperature = temp;
+	}
+	
+	//En un enum, se puede sobrescribir el metodo toString 
+	public String toString() {
+		//recuperar carater de un string con charAt
+        return this.name().charAt(0) + 
+               this.name().substring(1).toLowerCase();
+    }
+
+	public int getTemperature() {
+		return temperature;
+	}
+}
+
+public class ClaseEnum {
+	
+	public static void metodo () {
+		Season season = Season.SPRING;
+		
+		for( Season s : Season.values() ) {
+			System.out.print( s + "," );
+		}
+		System.out.println();
+		System.out.println( "name: " + season.name() );
+		
+		System.out.println( "static: " + Season.SUMMER );
+		
+		System.out.println( "ordinal: " + season.ordinal() );
+		
+		System.out.println( "toString: " + season.toString() );
+		
+	}
+	
+	public static void main ( String[] args ) {
+		
+		metodo();
+		
+	}
+	
+}

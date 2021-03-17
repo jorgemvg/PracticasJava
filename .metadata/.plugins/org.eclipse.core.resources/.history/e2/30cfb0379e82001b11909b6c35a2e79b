@@ -1,0 +1,21 @@
+package com.edu.voBeanDto;
+
+public class OtroPpal {
+
+	public static void main(String[] args) {
+		try {
+			Factura f1 = new Factura("Fac1", 100);	
+			System.out.println(f1);
+			Factura f2 = (Factura)f1.clone();
+			System.out.println(f2);
+			
+			System.out.println("Son el mismo objeto: " + (f1 == f2));
+			
+			
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

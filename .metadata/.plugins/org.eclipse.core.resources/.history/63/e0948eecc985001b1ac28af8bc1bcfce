@@ -1,0 +1,26 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import edu.hackerrank.challenge.Student;
+
+class Day12Test {
+
+	Student student;
+	
+	
+	@Before
+	public void before () {
+		int[] scores = {50, 60, 10, 100};
+		student = new Student("Jorge", "Vidal", 8160232, scores);
+	}
+	
+	@Test
+	public void test_O() {
+		
+		assertEquals(null, null);
+	}
+	
+}

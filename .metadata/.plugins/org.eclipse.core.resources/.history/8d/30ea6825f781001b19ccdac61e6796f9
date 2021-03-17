@@ -1,0 +1,12 @@
+package com.edu.factoryMethod;
+
+public class ClasePrincipal {
+
+	public static void main(String[] args) {
+
+		CalcSomething calc = CalcFactory.getCalculator();
+		double result = calc.calculate();
+		System.out.println(result);
+	}
+
+}

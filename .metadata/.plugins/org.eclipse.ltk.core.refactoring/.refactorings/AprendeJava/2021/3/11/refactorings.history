@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Day9.java&apos; to &apos;edu.hackerrank.challenge.Day9.java&apos;&#x0D;&#x0A;- Original project: &apos;AprendeJava&apos;&#x0D;&#x0A;- Destination element: &apos;edu.hackerrank.challenge.Day9.java&apos;&#x0D;&#x0A;- Original element: &apos;edu.hackerrank.challenge.Day9.java&apos;" description="Copy compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;edu.hackerrank.challenge{Day9.java" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;edu.hackerrank.challenge{Day9.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1615660052234" units="1" version="1.0"/>
+</session>

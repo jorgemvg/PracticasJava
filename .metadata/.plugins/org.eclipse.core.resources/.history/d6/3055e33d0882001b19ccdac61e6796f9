@@ -1,0 +1,20 @@
+package com.edu;
+
+public class ClaseImplementaInterfacePrueba implements InterfacePrueba {
+
+	@Override
+	public void imprimir() {
+		System.out.println("Esto se imprimio directamente de la clase");
+		
+	}
+
+	@Override
+	public void metodo5(String s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	class clase1 {
+		private String var1 = "segundo";
+	}
+}

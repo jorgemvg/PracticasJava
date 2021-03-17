@@ -1,0 +1,17 @@
+package com.edu;
+
+public class MaximumValues {
+
+	public static void main(String[] args) {
+
+		//valores maximos de tipos primitivos
+		System.out.println( Short.MAX_VALUE );
+		System.out.println( Character.MAX_VALUE );
+		System.out.println( Integer.MAX_VALUE );
+		System.out.println( Long.MAX_VALUE );
+		System.out.println( Float.MAX_VALUE );
+		System.out.println( Double.MAX_VALUE );
+
+	}
+
+}

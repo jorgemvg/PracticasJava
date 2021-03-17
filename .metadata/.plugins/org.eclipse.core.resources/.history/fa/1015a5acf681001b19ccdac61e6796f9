@@ -1,0 +1,18 @@
+package com.edu.factoryMethod;
+
+public class CalcFactory {
+    public static CalcSomething getCalculator(){
+        String alg = getAlgValueFromPropertyFile();
+        switch(alg){
+            case "1":
+                return new CalcUsingAlg1();
+            case "2":
+                int p1 = getAlg2Prop1FromPropertyFile();
+                double p2 = getAlg2Prop2FromPropertyFile();
+                return new CalcUsingAlg2(p1, p2);
+            default:
+                System.out.println("Unknown value " + alg);
+                return new CalcUsingAlg1();
+        }
+    }
+}

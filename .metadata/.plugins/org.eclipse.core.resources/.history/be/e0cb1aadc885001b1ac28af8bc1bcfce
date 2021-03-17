@@ -1,0 +1,17 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+class Day12Test {
+
+	Student student;
+	
+	@Before
+	public void before () {
+		
+	}
+	
+	
+}

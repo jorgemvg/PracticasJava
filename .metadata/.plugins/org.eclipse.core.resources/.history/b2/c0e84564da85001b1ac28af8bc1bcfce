@@ -1,0 +1,38 @@
+package com.edu;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PrincipalMetodos {
+
+	public static void main(String[] args) {
+		
+		probarMapCustom();
+
+	}
+	
+	public static void probarMapCustom() {
+		
+		MapCustom map = new MapCustom();
+		
+		map.add("key1", "value1");
+		map.add("key2", "value2");
+		map.add("key1", "value4");
+		map.add("key3", "value33");
+		map.add("key4", "value44");
+		
+		System.out.println( map );
+		
+		String mapRest = (String)map.get("key4");
+		
+		System.out.println("Resultado: ");
+		System.out.println( mapRest );
+		
+		Map mapr = new HashMap();
+		mapr.put(1, 232);
+		
+		System.out.println( mapr.get(1) );
+		
+	}
+
+}

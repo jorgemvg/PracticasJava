@@ -1,0 +1,76 @@
+package com.edu;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MapCustom {
+
+	private String key;
+	private String value;
+	
+	private List<MapCustom> lista = new ArrayList<>();
+	
+	
+	public MapCustom( ){
+	}
+	
+	public MapCustom( String key, String value ){
+		this.key = key;
+		this.value = value;
+	}
+	
+	protected void add( MapCustom o ) {
+		
+		if ( lista.contains(o) ) {
+			lista.remove(o);
+		}
+		
+		lista.add( o );
+		
+	}
+	protected void add( String key, String value ) {
+		MapCustom map = new MapCustom(key, value);
+		if ( lista.contains(map) ) {
+			lista.remove(map);
+		}
+		
+		lista.add( map );
+		
+	}
+	
+	
+	
+	protected MapCustom get( String key ) {
+		int index = lista.indexOf(new MapCustom(key, "") );
+		return lista.get(index);
+	}
+	
+	@Override
+	public String toString() {
+		
+		String text = "";
+		for( MapCustom m : lista ) {
+			text += m.key + ", " + m.value + "\n";
+		}
+		
+		return text;
+	}
+	
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+
+	
+	
+	
+	
+}

@@ -1,0 +1,84 @@
+package com.edu;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MapCustom {
+
+	private Object key;
+	private Object value;
+
+	private List<MapCustom> lista = new ArrayList<>();
+
+	public MapCustom() {
+	}
+
+	public MapCustom(String key, String value) {
+		this.key = key;
+		this.value = value;
+	}
+
+	protected void put(String key, String value) {
+		MapCustom map = new MapCustom(key, value);
+		if (lista.contains(map)) {
+			lista.remove(map);
+		}
+
+		lista.add(map);
+	}
+
+	protected Object get(String key) {
+		int index = lista.indexOf(new MapCustom(key, ""));
+		if ( index == -1 ) {
+			return null;
+		}
+		return (lista.get(index)).getValue();
+	}
+
+	@Override
+	public int hashCode() {
+		return this.key.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		boolean equals = false;
+		if (this == obj) {
+			equals = true;
+		}
+		if ( this.key.equals(((MapCustom)obj).getKey()) ) {
+			equals = true;
+		}
+		return equals;
+	}
+
+	@Override
+	public String toString() {
+
+		String text = null;
+		if ( lista != null && !lista.isEmpty() ) {
+			for (MapCustom m : lista) {
+				text += m.key + ", " + m.value + "\n";
+			}
+		}
+
+		return text;
+	}
+
+	public Object getKey() {
+		return key;
+	}
+
+	public void setKey(Object key) {
+		this.key = key;
+	}
+
+	public Object getValue() {
+		return value;
+	}
+
+	public void setValue(Object value) {
+		this.value = value;
+	}
+
+}

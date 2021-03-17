@@ -1,0 +1,32 @@
+package com.edu;
+
+enum Season{
+	SPRING, SUMMER, AUTUMN, WINTER
+}
+
+public class ClaseEnum {
+	
+	public static void metodo () {
+		Season season = Season.SPRING;
+		
+		for( Season s : Season.values() ) {
+			System.out.print( s + "," );
+		}
+		
+		System.out.println( season.name() );
+		
+		System.out.println( Season.SUMMER );
+		
+		System.out.println( season.ordinal() );
+		
+		System.out.println( season.toString() );
+		
+	}
+	
+	public static void main ( String[] args ) {
+		
+		metodo();
+		
+	}
+	
+}

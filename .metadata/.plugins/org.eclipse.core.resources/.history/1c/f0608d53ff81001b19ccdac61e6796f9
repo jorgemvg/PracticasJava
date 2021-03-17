@@ -1,0 +1,13 @@
+package com.edu;
+
+public class ClaseHeredaDeAbstractaPrueba extends ClaseAbstractaPrueba {
+
+	public void metodo() {
+		
+	}
+	
+	public final void metodo(String s) {
+		
+	}
+	
+}

@@ -1,0 +1,2 @@
+module PruebasJava12 {
+}
